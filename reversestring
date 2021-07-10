@@ -1,0 +1,20 @@
+import java.util.*;
+class reversestring
+{
+public static void main(String args[])
+{
+	int i,n=0;
+	String str,s[];
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter string:");
+	str=sc.nextLine();
+	s=str.split(" ");
+	for(i=0;i<s.length;i++)
+	{
+		char ch[]=s[i].toCharArray();
+		for(int j=ch.length-1;j>=0;j--)
+			System.out.print(ch[j]);
+		System.out.print(" ");
+	}	
+}
+}
